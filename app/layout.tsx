@@ -1,5 +1,8 @@
 import React from "react"
 
+// These styles apply to every route in the application
+import './globals.css'
+
 export default function RootLayout({
   children,
 }: {
@@ -7,7 +10,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className="h-screen bg-gray-200">{children}</body>
     </html>
   )
 }
